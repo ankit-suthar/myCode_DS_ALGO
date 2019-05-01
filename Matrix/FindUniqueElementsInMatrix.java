@@ -14,18 +14,11 @@ Input :  1  2  3
          1  3  5
          6  2  2
 Output : No unique element in the matrix
-
-Follow these steps to find unique element:
-1. Create an empty hash table or dictionary.
-2. Traverse through all the elements of the matrix
-3. If element is present in the dictionary, then increment its count
-4. Otherwise insert element with value = 1.
 */
 package com.matrix.matrix;
 
 import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
@@ -59,17 +52,10 @@ public class FindUniqueElementsInMatrix {
 			for(int i=0;i<m.size();i++)
 				System.out.print(m.get(i)+" ");
 		else
-			System.out.println("No unique element in the matrix");
-			
+			System.out.println("No unique element in the matrix");	
 	}
 
-	public static void main(String[] args) {
-	/*	int mat[][] = {{1, 2, 3},  
-		               {5, 6, 2},
-		               {1, 3, 5},
-		               {6, 2, 2}};
-		               */
-		
+	public static void main(String[] args) {		
 		int mat[][] = {{1, 2, 3, 20}, 
 		               {5, 6, 20, 25},
 		               {1, 3, 5, 6},
