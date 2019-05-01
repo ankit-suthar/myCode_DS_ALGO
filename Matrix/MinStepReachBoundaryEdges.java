@@ -22,22 +22,7 @@ Input: matrix[] = {1, 1, 1, 1, 1}
                   {1, 0, 2, 0, 1} 
                   {1, 0, 1, 0, 1}
                   {1, 1, 1, 1, 1}
-Output: -1 
-Approach: The problem can be solved using a Dynamic Programming approach. 
-Given below is the algorithm to solve the above problem.
-
-Find the position which has ‘2’ in the matrix.
-Initialize two 2-D arrays of size same as the matrix. The dp[][] which stores the minimum 
-number of steps to reach any index i, j and vis[][] marks if any particular i, j position has 
-been visited or not previously.
-Call the recursive function which has the base case as follows:
-if the traversal at any point reaches any of the boundary edges return 0.
-if the points position n, m has stored the minimum number of steps previously, then return dp[n][m].
-Call the recurion again with all possible four moves that can be done from the position n, m. 
-The moves are only possible if mat[n][m] is 0 and the position has not been visited previously.
-Store the minimal of the four moves.
-If the recursion returns any value less than 1e9, which we had stored as the maximum value, 
-then there is an answer, else it does not have any answer.
+Output: -1
 */
 package com.matrix.matrix;
 
