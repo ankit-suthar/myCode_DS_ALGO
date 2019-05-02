@@ -4,8 +4,8 @@ There are no duplicates in list. One of the integers is missing in the list.
 Write an efficient code to find the missing integer.
 
 Example :
-I/P    [1, 2, 4, ,6, 3, 7, 8]
-O/P    5
+Input: [1, 2, 4, ,6, 3, 7, 8]
+Output:  5
 
 METHOD 1(Use sum formula)
 Algorithm:
@@ -35,5 +35,4 @@ public class FindMissingNumber {
 		System.out.println("Missing value is: "+getMissingNo(arr,n+1));
 	}
 }
-
 // Time Complexity : O(n)
