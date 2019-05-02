@@ -39,8 +39,4 @@ public class StockSpanProblemUsingStack {
 		stockSpan(arr);
 	}
 }
-//Time Complexity: O(n). It seems more than O(n) at first look. 
-//If we take a closer look, we can observe that every element of 
-//array is added and removed from stack at most once. So there are total 
-//2n operations at most. Assuming that a stack operation takes O(1) time, 
-//we can say that the time complexity is O(n).
+//Time Complexity: O(n)
