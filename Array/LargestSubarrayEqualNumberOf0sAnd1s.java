@@ -13,11 +13,6 @@ Output: No such subarray
 Input: arr[] = {0, 0, 1, 1, 0}
 Output: 0 to 3 Or 1 to 4
 
-Method 1 (Simple)
-A simple method is to use two nested loops. The outer loop picks a starting point i. The inner loop considers all subarrays starting from i. 
-If size of a subarray is greater than maximum size so far, then update the maximum size.
-In the below code, 0s are considered as -1 and sum of all values from i to j is calculated. 
-If sum becomes 0, then size of this subarray is compared with largest size so far.
 */
 package com.array.array;
 
