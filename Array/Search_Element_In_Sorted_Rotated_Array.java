@@ -37,3 +37,4 @@ public class Search_Element_In_Sorted_Rotated_Array {
         System.out.println("Key not found");
 	}
 }
+//Time Complexity: O(nlogn)
