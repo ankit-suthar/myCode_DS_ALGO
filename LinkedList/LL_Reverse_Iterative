@@ -1,0 +1,50 @@
+public class LL_Reverse_Iterative {
+	 Node head;
+	 
+	 class Node{
+		int data;
+		Node next;
+		Node(int d){
+			data=d;
+			next=null;
+		}
+	}
+	
+	Node reverse(Node node){
+		Node prev=null;
+		Node current=node;
+		Node next=null;
+		
+		while(current!=null){
+			next=current.next;
+		  current.next=prev;
+		  prev=current;
+		  current=next;
+		}
+		node=prev;
+		return node;
+	}
+	
+	void printlist(Node node){
+		while(node!=null){
+			System.out.println(node.data+" ");
+			node=node.next;
+		}
+	}
+	
+	public static void main(String[] args) {
+		LL_Reverse_Iterative llist=new LL_Reverse_Iterative();
+		
+		llist.head=llist.new Node(85);
+		llist.head.next=llist.new Node(15);
+		llist.head.next.next=llist.new Node(4);
+		llist.head.next.next.next=llist.new Node(20);
+		
+		System.out.println("Given Linked list");
+		llist.printlist(llist.head);
+		llist.head=llist.reverse(llist.head);
+		System.out.println("");
+		System.out.println("Reversed Linked list");
+		llist.printlist(llist.head);
+	}
+}
