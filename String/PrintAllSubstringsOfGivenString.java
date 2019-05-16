@@ -34,7 +34,7 @@ public class PrintAllSubstringsOfGivenString {
 	}
 
 	public static void main(String[] args) {
-		String str = "ankit";
+		String str = "abcd";
 		
 		printAllString(str);
 	}
