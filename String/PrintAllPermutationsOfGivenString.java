@@ -22,7 +22,7 @@ public class PrintAllPermutationsOfGivenString {
 	}
 	
 	public String swap(String a, int i, int j) 
-  { 
+  	{ 
 		char ch[] = a.toCharArray();
 		
 		char temp = ch[i];
@@ -30,12 +30,12 @@ public class PrintAllPermutationsOfGivenString {
 		ch[j] = temp;
 		
 		return String.valueOf(ch);
-  }
+  	}
 
 	public static void main(String[] args) {
 		PrintAllPermutationsOfGivenString permutation = new PrintAllPermutationsOfGivenString();
 		String str = "1234";//"ABC"; 
-    int n = str.length(); 
-    permutation.permute(str, 0, n - 1); 
+    		int n = str.length(); 
+    		permutation.permute(str, 0, n - 1); 
 	}
 }
