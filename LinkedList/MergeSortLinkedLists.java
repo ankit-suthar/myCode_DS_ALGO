@@ -1,3 +1,5 @@
+//Merge Sorted LinkedLists
+
 public class MergeSortLinkedLists {
 	Node head;
 	
@@ -92,7 +94,6 @@ public class MergeSortLinkedLists {
     System.out.println("Linked List without sorting is :"); 
     li.printList(li.head); 
 
-    // Apply merge Sort
     li.head = li.mergeSort(li.head);
     System.out.print("\nSorted Linked List is: \n"); 
     li.printList(li.head);
